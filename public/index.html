@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Feastify </title>
+
+   <!-- bootstrap link -->
+   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+   <!-- font awesome link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+   <!-- css link -->
+   <link rel="stylesheet" href="../src/style.css">
+   <link rel="stylesheet" href="../src/responsive-style.css">
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+         <div class="container">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="#">
+               <img src="../public/images/logo.png" alt="logo">
+            </a>
+   
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar">
+               <i class="fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+            </button>
+   
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start bg-dark" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+               <!-- Offcanvas Header -->
+               <div class="offcanvas-header">
+                  <a class="navbar-brand" href="#">
+                     <img src="../public/images/logo.png" alt="logo" class="img-fluid">
+                  </a>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <!-- Offcanvas Body -->
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#explore-food">Explore Foods</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#testimonial">Reviews</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#team">Team</a>
+                     </li>
+                     <li class="nav-item">
+                        <button class="main-btn">1800 345 678</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Top-Banner Section -->
+   <section id="home">
+      <div class="top-banner">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1>Our Restaurant Offers Delicious & Seafood</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum
+                     amet leo. orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
+                     bibendum amet leo.
+                  </p>
+                  <button class="main-btn mt-4">Order now <i class="fa-solid fa-basket-shopping ps-3"></i></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Counter Section -->
+   <section id="counter">
+      <div class="counter-section">
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+                  <img src="./images/counter/img-1.webp" class="img-fluid mb-3" alt="">
+                  <h2><span id="count1"></span>+</h2>
+                  <p>SAVINGS</p>
+               </div>
+               <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+                  <img src="./images/counter/img-2.webp" class="img-fluid mb-3" alt="">
+                  <h2><span id="count2"></span>+</h2>
+                  <p>PHOTOS</p>
+               </div>
+               <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+                  <img src="./images/counter/img-3.webp" class="img-fluid mb-3" alt="">
+                  <h2><span id="count3"></span>+</h2>
+                  <p>ROCKETS</p>
+               </div>
+               <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+                  <img src="./images/counter/img-4.webp" class="img-fluid mb-3" alt="">
+                  <h2><span id="count4"></span>+</h2>
+                  <p>GLOBES</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about">
+      <div class="about-section wrapper">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                  <img src="./images/img/img-1.png" class="img-fluid" alt="burger">
+               </div>
+               <div class="col-lg-6 col-md-12 ps-lg-5">
+                  <h2>We make everything by hand with the best possible ingredients.</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus odio finibus bibendum in
+                     sit amet leo. Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the
+                     countries Vokalia Consonantia, there live the blind texts.
+                  </p>
+                  <ul class="list-unstyled py-3">
+                     <li><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> Etiam sed dolor ac diam
+                        volutpat.</li>
+                     <li><i class="fa-solid fa-check" style="color: var(--primary-color);"></i>
+                        Erat volutpat aliquet imperdiet.</li>
+                     <li><i class="fa-solid fa-check" style="color: var(--primary-color);"></i>
+                        purus a odio finibus bibendum.</li>
+                  </ul>
+                  <button class="main-btn mt-4">Learn More</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Story Section -->
+   <section id="story">
+      <div class="story-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="text-content text-center">
+                     <h2>When a man's stomach is full it makes no
+                        difference whether he is rich or poor.</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum
+                        in sit amet leo. Mauris feugiat erat tellus.
+                     </p>
+                     <button class="main-btn mt-3">Read More</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Explore Food Section -->
+   <section id="explore-food">
+      <div class="explore-food wrapper">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="text-content text-center">
+                     <h2>Explore Our Foods</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum
+                        in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from
+                        the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+                        Bookmarksgrove.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row pt-5">
+               <div class="col-lg-4 col-md-6b=mb-lg-0 mb-5">
+                  <div class="card">
+                     <img src="./images/img/img-3.jpg" class="img-fluid" alt="burger">
+                     <div class="p-4">
+                        <h4>Rainbow Vegetable Burger</h4>
+                        <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                        <span>$10.50 <del>$11.70</del></span>
+                        <button class="main-btn mt-4">Order Now</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6b=mb-lg-0 mb-5">
+                  <div class="card">
+                     <img src="./images/img/img-4.jpg" class="img-fluid" alt="vegfood">
+                     <div class="p-4">
+                        <h4>Vegetarian Food</h4>
+                        <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                        <span>$9.20 <del>$10.50</del></span>
+                        <button class="main-btn mt-4">Order Now</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6b=mb-lg-0 mb-5">
+                  <div class="card">
+                     <img src="./images/img/img-5.jpg" class="img-fluid" alt="stuffedfood">
+                     <div class="p-4">
+                        <h4>Raspberry Stuffed French Food</h4>
+                        <p>Time: 10 - 15 Minutes | Serves: 1</p>
+                        <span>$12.50 <del>$13.20</del></span>
+                        <button class="main-btn mt-4">Order Now</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Testimonial Section -->
+   <section id="testimonial">
+      <div class="testimonial-section wrapper">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-sm-12 text-center pb-4">
+                  <h2>Testimonial</h2>
+               </div>
+               <div class="col-sm-12 col-lg-10">
+                  <div id="carousel" class="carousel slide">
+                     <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                           aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                           aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                           aria-label="Slide 3"></button>
+                     </div>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="carousel-caption">
+                              <img src="./images/review/review-1.jpg" alt="review">
+                              <p>
+                                 "Far far away, behind the word mountains, far from the countries Vokalia and
+                                 Consonantia, there live the blind texts. "
+                              </p>
+                              <h5>Johnthan Doe - UX Designer</h5>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-caption">
+                              <img src="./images/review/review-2.jpg" alt="review">
+                              <p>
+                                 "Far far away, behind the word mountains, far from the countries Vokalia and
+                                 Consonantia, there live the blind texts. "
+                              </p>
+                              <h5>Maccy Doe - Front End</h5>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-caption">
+                              <img src="./images/review/review-1.jpg" alt="review">
+                              <p>
+                                 "Far far away, behind the word mountains, far from the countries Vokalia and
+                                 Consonantia, there live the blind texts. "
+                              </p>
+                              <h5>Johnthan Doe - UX Designer</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Team Section -->
+   <section id="team">
+      <div class="team-section text-center wrapper">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 text-center pb-5">
+                  <h2>They will cook for you</h2>
+               </div>
+               <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="card">
+                     <img src="./images/team/img-1.webp" class="img-fluid" alt="">
+                     <div class="team-caption px-2 py-4">
+                        <h4>Tonny Stark</h4>
+                        <h6>Sous-Chef</h6>
+                        <p>
+                           Viverra lorem ipsuet elit liquam erat volut pat phas ellus ac sodales.
+                        </p>
+                        <div class="social-icon">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="card">
+                     <img src="./images/team/img-2.webp" class="img-fluid" alt="">
+                     <div class="team-caption px-2 py-4">
+                        <h4>Sharon Needles</h4>
+                        <h6>Sous-Chef</h6>
+                        <p>
+                           Viverra lorem ipsuet elit liquam erat volut pat phas ellus ac sodales.
+                        </p>
+                        <div class="social-icon">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="card">
+                     <img src="./images/team/img-3.webp" class="img-fluid" alt="">
+                     <div class="team-caption px-2 py-4">
+                        <h4>Peter Parker</h4>
+                        <h6>Sous-Chef</h6>
+                        <p>
+                           Viverra lorem ipsuet elit liquam erat volut pat phas ellus ac sodales.
+                        </p>
+                        <div class="social-icon">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Book Section -->
+   <section class="book-food">
+      <div class="book-food">
+         <div class="container book-food-text">
+            <div class="row text-center">
+               <div class="col-lg-9 col-md-12">
+                  <h2>Baked fresh daily by bakers with passion.</h2>
+               </div>
+               <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                  <button class="main-btn">Book Online</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Download App Section -->
+   <section id="download-app">
+      <div class="download-app wrapper">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6 mb-4 order-2 order-lg-1">
+                  <div class="text-content">
+                     <h1 class="mb-3">Download our mobile app.</h1>
+                     <p>Consectetur numquam poro nemo veniam
+                        eligendi rem adipisci quo modi.
+                     </p>
+                     <div class="d-flex flex-wrap mt-4">
+                        <a href="#"><img src="./images/app/1.svg" class="me-3" alt=""></a>
+                        <a href="#"><img src="./images/app/2.svg" class="me-3" alt=""></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4 order-1 order-lg-2">
+                  <img src="./images/app/phones.png" class="img-fluid" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer Section -->
+   <section id="footer">
+      <div class="footer py-5">
+         <div class="container"> 
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <a href="#" class="footer-link">Register</a>
+                  <a href="#" class="footer-link">Forum</a>
+                  <a href="#" class="footer-link">Affiliate</a>
+                  <a href="#" class="footer-link">Team</a>
+
+                  <div class="footer-social pt-4 text-center">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://x.com/home?lang=en" target="_blank"><i class="fab fa-twitter" ></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-dribbble"></i></a>
+                     <a href="https://www.linkedin.com/in/santoshkr900/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+
+               <div class="col-sm-12">
+                  <div class="text-center pt-5">
+                     <p class="text-light">&copy; 2025. Feastify designed by Santosh❤️. All rights reserved.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- JS bootstrap link -->
+   <script src="../node_modules/jquery/dist/jquery.js"></script>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+   <!-- JS link -->
+   <script src="../src/script.js"></script>
+</body>
+
+</html>
